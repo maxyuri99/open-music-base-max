@@ -1,1 +1,214 @@
 /* Desenvolva sua estilização aqui ... */
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 45px 0 45px 0;
+}
+
+.header>h1 {
+    color: var(--color-grey-1);
+    font-size: var(--font-1);
+    font-weight: var(--font-weight-1);
+}
+
+.album-filter__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-filter__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.gender-filter__container>h2 {
+    color: var(--color-grey-1-h2);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+}
+
+.gender-list__controller {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1.4375rem;
+}
+
+.price-filter__container {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.25rem;
+}
+
+.price-text__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-text__container>h2 {
+    color: var(--color-grey-1-h2);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+}
+
+.price-text__container>p {
+    color: var(--color-grey-2);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-2);
+}
+
+.album__container {
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.album__container>h2 {
+    color: var(--color-grey-1-h2);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+}
+
+.album-list__controller {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.album-li__container {
+    width: 308px;
+    height: 259px;
+
+    border-radius: var(--radius-1);
+    overflow: hidden;
+    background-color: var(--color-grey-8);
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease-in-out;
+
+    gap: 10px;
+}
+
+.zoom-container {
+    width: 100%;
+    height: 228px;
+
+    overflow: hidden;
+}
+
+.album-li__container:hover .image__album {
+    transform: scale(1.2);
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.album-li__container:hover {
+    background-color: var(--color-grey-7);
+}
+
+.image__album {
+    width: 100%;
+    height: 110px;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.all-intens-album__container {
+    width: 100%;
+    height: 100%;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name__album {
+    color: var(--color-grey-1);
+    font-size: var(--font-2);
+    font-weight: var(--font-weight-1);
+
+}
+
+
+.description-album__container {
+    display: flex;
+
+    gap: 18px;
+}
+
+.description-album__container>p {
+    font-size: var(--font-4);
+    color: var(--color-grey-2);
+}
+
+.buy-album__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price__album {
+    color: var(--color-grey-1);
+    font-size: var(--font-3);
+    font-weight: var(--font-weight-1);
+}
+
+/* Codigo para estilizar input radio  */
+
+.price-filter__range {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--color-brand-1) 0%, var(--color-brand-1) calc(var(--range-value) * 100%), var(--color-grey-3) calc(var(--range-value) * 100%), var(--color-grey-3) 100%);
+
+    outline: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.price-filter__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+
+    background-color: var(--color-white-fixed);
+    border: 5px solid var(--color-brand-1);
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.price-filter__range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.price-filter__range::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
